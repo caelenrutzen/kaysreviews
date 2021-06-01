@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+li, a, button {
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #6F99FF;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+}
+h1 {
+    cursor: pointer;
+}
+h3 {
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+}
+nav {
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 20px;
+}
+nav li a {
+    transition: all 0.3s ease 0s;
+}
+nav li a:hover {
+    color: #f4f4f4;
+}
+button {
+    padding: 9px 25px;
+    font-size: 16px;
+    background-color: rgba(189, 209, 2055, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover {
+    background-color: rgba(189, 209, 2055, .8);
+}
+.intro h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 30px 0;
+}
+.intro p {
+    width: 80%;
+    margin: 20px auto;
+    text-align: justify;
+    line-height: 1.8em;
+    font-size: 20px;
+}
+.modalBtn {
+    margin: 0 auto;
+    display: block;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 70%;
+    line-height: 2em;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+    font-size: 18px;
+}
+.closeBtn {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.closeBtn:hover, .closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#toystory4, #onceupon, #midsommar, #spidermanffh {
+    height: 360px;
+    width: 240px;
+    padding: 10px;
+
+}
+footer {
+    background-color: #6F99FF;
+    height: 85px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.2rem;
+}
+.social {
+    font-size: 1.4em;
+    margin: 5px;
+}
+@media (max-width: 785px) {
+    nav li {
+        padding: 0 20px;
+    }
+    .intro p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 600px) {
+    nav li {
+        display: block;
+        padding-top: 15px;
+    }
+}
